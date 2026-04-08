@@ -114,6 +114,13 @@ nav .container {
     height: 40px;
 }
 
+/* Hide toggle on desktop */
+.menu-toggle {
+    display: none;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2.5rem;
@@ -684,30 +691,82 @@ footer p {
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
+    :root {
+        --section-spacing: 80px;
+    }
+    
     .about-grid, .contact-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
     
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
     
-    .hero h1 {
-        font-size: 3.5rem;
+    .btn-contact-nav {
+        display: none;
     }
     
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Mobile Menu Active State */
+    .nav-links.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(2, 6, 23, 0.98);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1000;
+        animation: fadeIn 0.3s ease-out;
+    }
+
+    .nav-links.active li a {
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+    }
+    
+    .hero-content {
+        padding: 0 1.5rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .section-title {
         font-size: 2.2rem;
     }
     
     .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
         grid-template-columns: 1fr;
     }
     
@@ -719,4 +778,17 @@ footer p {
     .contact-form {
         padding: 2rem;
     }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
