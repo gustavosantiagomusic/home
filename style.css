@@ -865,13 +865,41 @@ footer p {
         padding: 1.5rem !important;
         margin: 0 !important;
         width: 100% !important;
+        max-width: 100vw !important;
         box-sizing: border-box !important;
         text-align: left !important;
         border-radius: 12px !important;
+        overflow: hidden !important;
+    }
+
+    .contact-form form {
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .form-group {
         text-align: left !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 1.2rem !important;
+    }
+
+    .form-group label {
+        text-align: left !important;
+        display: block !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .btn-submit {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
     }
 
     .method {
