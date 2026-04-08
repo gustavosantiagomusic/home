@@ -752,36 +752,45 @@ footer p {
     .hero {
         text-align: left;
         justify-content: flex-start;
+        align-items: flex-start;
         padding-top: 100px;
     }
 
     .hero-content {
-        padding: 0;
+        padding: 0 1.5rem;
         margin: 0;
         text-align: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-align: left;
-        margin-inline: 0;
+        margin-left: 0;
+        margin-right: auto;
     }
     
     .hero p {
         font-size: 1.1rem;
         text-align: left;
-        margin-inline: 0;
+        margin-left: 0;
+        margin-right: auto;
         margin-bottom: 2rem;
     }
 
     .hero-btns {
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
         gap: 1rem;
+        width: 100%;
     }
 
     .btn-primary, .btn-secondary {
-        width: 100%;
+        width: auto;
+        min-width: 200px;
         text-align: center;
     }
 
@@ -840,6 +849,11 @@ footer p {
         margin: 0;
         width: 100%;
         box-sizing: border-box;
+        text-align: left;
+    }
+
+    .form-group {
+        text-align: left;
     }
 
     .method {
@@ -847,11 +861,11 @@ footer p {
     }
 
     .whatsapp-float {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         bottom: 20px;
         right: 20px;
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
