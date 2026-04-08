@@ -17,15 +17,13 @@ window.addEventListener("scroll", reveal);
 document.addEventListener("DOMContentLoaded", () => {
     reveal();
     
-    // Navbar background change on scroll
+    // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            navbar.style.padding = '0.5rem 0';
-            navbar.style.background = 'rgba(2, 6, 23, 0.95)';
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.padding = '1rem 0';
-            navbar.style.background = 'rgba(2, 6, 23, 0.8)';
+            navbar.classList.remove('scrolled');
         }
     });
 
