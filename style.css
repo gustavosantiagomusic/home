@@ -746,126 +746,149 @@ footer p {
     }
 
     .container {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem !important;
     }
 
     .hero {
-        text-align: left;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 80px;
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start !important;
+        text-align: left !important;
     }
 
     .hero-content {
-        padding: 0 1.5rem;
-        margin: 0;
-        text-align: left;
-        align-items: flex-start;
+        padding: 0;
+        margin: 0 !important;
+        text-align: left !important;
+        width: 100% !important;
+        max-width: 100% !important;
         display: flex;
         flex-direction: column;
+        align-items: flex-start !important;
     }
 
     .hero h1 {
-        font-size: 2.2rem;
-        text-align: left;
-        margin-left: 0;
-        margin-right: auto;
+        font-size: 2.2rem !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        width: 100% !important;
     }
     
     .hero p {
-        font-size: 1.1rem;
-        text-align: left;
-        margin-left: 0;
-        margin-right: auto;
-        margin-bottom: 2rem;
+        font-size: 1.05rem !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        margin-bottom: 2rem !important;
+        max-width: 100% !important;
     }
 
     .hero-btns {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 1rem;
-        width: 100%;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        gap: 1rem !important;
+        width: 100% !important;
     }
 
     .btn-primary, .btn-secondary {
-        width: auto;
-        min-width: 200px;
-        text-align: center;
+        width: 100% !important;
+        max-width: 300px;
+        text-align: center !important;
     }
 
     .section-header {
-        text-align: left;
-        margin-bottom: 3rem;
+        text-align: left !important;
+        margin-bottom: 2.5rem !important;
     }
 
     .section-title {
-        font-size: 2.2rem;
-        text-align: left;
+        font-size: 2rem !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+    }
+
+    .section-tag {
+        text-align: left !important;
     }
     
     .about-img-wrapper::before {
-        left: -15px;
-        top: 20px;
+        display: none; /* Clear noise on mobile */
     }
 
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     
     .testimonial-card {
-        padding: 1.5rem;
-        text-align: left;
+        padding: 1.5rem !important;
+        text-align: left !important;
     }
 
     .testimonial-card p {
-        text-align: left;
+        text-align: left !important;
     }
 
     .testimonial-author {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     
+    .gallery-overlay {
+        opacity: 1 !important; /* Always visible on mobile */
+        background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent) !important;
+    }
+
     .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
     }
     
     .contact-grid {
-        gap: 3rem;
+        gap: 3rem !important;
     }
 
     .contact-info h2 {
-        font-size: 2.2rem;
-        text-align: left;
+        font-size: 2rem !important;
+        text-align: left !important;
     }
 
     .contact-form {
-        padding: 1.5rem;
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        text-align: left;
+        padding: 1.5rem !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: left !important;
+        border-radius: 12px !important;
     }
 
     .form-group {
-        text-align: left;
+        text-align: left !important;
     }
 
     .method {
-        gap: 1rem;
+        gap: 1rem !important;
+    }
+
+    footer {
+        text-align: left !important;
+        padding: 2rem 0 !important;
     }
 
     .whatsapp-float {
-        width: 40px;
-        height: 40px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 20px;
+        width: 45px !important;
+        height: 45px !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        font-size: 22px !important;
     }
 }
 
