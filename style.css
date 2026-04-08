@@ -853,12 +853,25 @@ footer p {
     }
     
     .contact-grid {
+        grid-template-columns: 1fr !important;
         gap: 3rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .contact-info {
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .contact-info h2 {
         font-size: 2rem !important;
         text-align: left !important;
+        word-break: break-word !important;
+    }
+    
+    .contact-info p {
+        word-break: break-word !important;
     }
 
     .contact-form {
@@ -904,6 +917,13 @@ footer p {
 
     .method {
         gap: 1rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .method-text {
+        max-width: calc(100% - 70px) !important;
+        word-break: break-word !important;
     }
 
     footer {
